@@ -35,14 +35,23 @@
   <!-- ======================== LOADER ======================== -->
   <div class="loader" id="loader">
     <div class="loader-content">
-      <div class="loader-ring">
+      <!-- Start button (shown first) -->
+      <button class="loader-start-btn show" id="loaderStartBtn" type="button">
+        <div class="loader-start-inner">
+          <span class="loader-start-dot"></span>
+          <span class="loader-start-label">Enter</span>
+        </div>
+      </button>
+
+      <!-- Loading ring (hidden until Enter is clicked) -->
+      <div class="loader-ring" id="loaderRing" style="display: none; opacity: 0;">
         <svg viewBox="0 0 100 100" fill="none">
           <circle cx="50" cy="50" r="48" class="ring-bg" />
           <circle cx="50" cy="50" r="48" class="ring-progress" id="loaderProgress" />
         </svg>
         <div class="loader-percent"><span id="loaderNum">00</span><span>%</span></div>
       </div>
-      <p class="loader-text">Loading experience</p>
+      <p class="loader-text" id="loaderText" style="display: none; opacity: 0;">Loading experience</p>
     </div>
   </div>
 
@@ -533,19 +542,47 @@
       const loader = document.getElementById('loader');
       const loaderNum = document.getElementById('loaderNum');
       const loaderProgress = document.getElementById('loaderProgress');
+      const loaderRing = document.getElementById('loaderRing');
+      const loaderText = document.getElementById('loaderText');
+      const startBtn = document.getElementById('loaderStartBtn');
       const circumference = 2 * Math.PI * 48; // r=48
-      let progress = 0;
-      const interval = setInterval(() => {
-        progress += Math.random() * 8 + 2;
-        if (progress >= 100) progress = 100;
-        const val = Math.round(progress);
-        loaderNum.textContent = val < 10 ? '0' + val : val;
-        loaderProgress.style.strokeDashoffset = circumference - (circumference * progress) / 100;
-        if (progress >= 100) {
-          clearInterval(interval);
-          setTimeout(() => loader.classList.add('hidden'), 400);
-        }
-      }, 60);
+
+      // Click Enter → hide button, show loading ring
+      startBtn.addEventListener('click', () => {
+        // Fade out the button
+        startBtn.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        startBtn.style.opacity = '0';
+        startBtn.style.transform = 'scale(0.8)';
+
+        setTimeout(() => {
+          startBtn.style.display = 'none';
+
+          // Show loading ring and text
+          loaderRing.style.display = 'block';
+          loaderText.style.display = 'block';
+          requestAnimationFrame(() => {
+            loaderRing.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            loaderRing.style.opacity = '1';
+            loaderRing.style.transform = 'scale(1)';
+            loaderText.style.transition = 'opacity 0.5s ease';
+            loaderText.style.opacity = '1';
+          });
+
+          // Start counting
+          let progress = 0;
+          const interval = setInterval(() => {
+            progress += Math.random() * 8 + 2;
+            if (progress >= 100) progress = 100;
+            const val = Math.round(progress);
+            loaderNum.textContent = val < 10 ? '0' + val : val;
+            loaderProgress.style.strokeDashoffset = circumference - (circumference * progress) / 100;
+            if (progress >= 100) {
+              clearInterval(interval);
+              setTimeout(() => loader.classList.add('hidden'), 400);
+            }
+          }, 60);
+        }, 400);
+      });
     })();
 
     // ===== PARTICLES =====

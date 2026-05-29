@@ -140,7 +140,7 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .loader-ring {
@@ -195,6 +195,93 @@ ol {
   text-transform: uppercase;
   letter-spacing: 0.4em;
   color: var(--fg-dim);
+}
+
+/* Start button — appears after loading completes */
+.loader-start-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid var(--border-muted);
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease;
+  margin-top: 0.5rem;
+}
+
+.loader-start-btn.show {
+  display: flex;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.loader-start-btn::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.loader-start-btn:hover {
+  border-color: rgba(100, 181, 246, 0.4);
+  box-shadow: 0 0 40px rgba(100, 181, 246, 0.2);
+  transform: scale(1.05);
+}
+
+.loader-start-btn:hover::before {
+  border-color: rgba(100, 181, 246, 0.2);
+  transform: scale(1.08);
+}
+
+.loader-start-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loader-start-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  transition: all 0.5s ease;
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 4px var(--accent);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 16px var(--accent);
+    transform: scale(1.3);
+  }
+}
+
+.loader-start-btn:hover .loader-start-dot {
+  transform: scale(1.5);
+  box-shadow: 0 0 16px var(--accent);
+  animation: none;
+}
+
+.loader-start-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--fg-muted);
+  transition: color 0.5s ease;
+}
+
+.loader-start-btn:hover .loader-start-label {
+  color: var(--fg);
 }
 
 /* ============================
@@ -500,7 +587,7 @@ ol {
   max-width: 600px;
   height: 85%;
   z-index: 5;
-  opacity: 0.35;
+  opacity: 0.55;
   mask-image: linear-gradient(
     to bottom,
     transparent 0%,
@@ -522,7 +609,7 @@ ol {
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  filter: grayscale(40%) contrast(1.1);
+  filter: grayscale(15%) contrast(1.05) brightness(1.1);
 }
 
 .hero-gradient-top {
@@ -1701,7 +1788,7 @@ section {
   }
 
   .hero-portrait {
-    opacity: 0.25;
+    opacity: 0.45;
   }
 }
 
@@ -1712,7 +1799,7 @@ section {
   .hero-portrait {
     width: 70%;
     height: 60%;
-    opacity: 0.2;
+    opacity: 0.35;
   }
 
   .hero-side-text {
