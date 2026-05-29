@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tuan Minh Hoang | Portfolio</title>
-  <meta name="description" content="Tuan Minh Hoang — International Business Economics student, data analytics enthusiast. Skilled in SQL, Python, BigQuery, Looker, and cloud data pipelines." />
+  <meta name="description"
+    content="Tuan Minh Hoang — International Business Economics student, data analytics enthusiast. Skilled in SQL, Python, BigQuery, Looker, and cloud data pipelines." />
   <meta name="author" content="Tuan Minh Hoang" />
   <meta name="theme-color" content="#050a14" />
   <meta name="color-scheme" content="dark" />
@@ -17,12 +19,18 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
 
   <!-- ======================== LOADER ======================== -->
   <div class="loader" id="loader">
@@ -177,259 +185,344 @@
       </div>
     </section>
 
-    <!-- ======== ABOUT ======== -->
-    <section id="about">
-      <div class="section-header reveal">
-        <div class="section-accent-line"></div>
-        <p class="section-tag">About Me</p>
-        <h2 class="section-title">Turning data into stories<br />that drive decisions.</h2>
-      </div>
+    <!-- Background wrapper for content sections -->
+    <div class="content-bg">
 
-      <div class="about-content">
-        <div class="about-text reveal">
-          <p>
-            Passionate and driven International Business Economics student at Foreign Trade University with significant academic and practical experience managing and visualizing data across multiple domains.
-          </p>
-          <p>
-            Skilled at data and ETL operations, business storytelling through dashboards and reports, and project management. I combine analytical rigor with clear communication to transform complex datasets into actionable insights.
-          </p>
-          <p>
-            Currently seeking a business analytics graduate internship at a leading MNC, where I can apply my expertise in SQL, Python, BigQuery, Looker, and cloud-native data pipelines to solve real-world business challenges.
-          </p>
+      <!-- ======== ABOUT ======== -->
+      <section id="about" class="section-enter">
+        <div class="section-header reveal">
+          <div class="section-accent-line reveal-line"></div>
+          <p class="section-tag reveal-blur">About Me</p>
+          <h2 class="section-title word-reveal">Turning data into stories that drive decisions.</h2>
         </div>
 
-        <div class="about-stats stagger-children">
-          <div class="stat-card">
-            <div class="stat-value">7.5</div>
-            <div class="stat-label">IELTS Score</div>
+        <div class="about-content">
+          <div class="about-text reveal-left">
+            <p>
+              Passionate and driven International Business Economics student at Foreign Trade University with
+              significant academic and practical experience managing and visualizing data across multiple domains.
+            </p>
+            <p>
+              Skilled at data and ETL operations, business storytelling through dashboards and reports, and project
+              management. I combine analytical rigor with clear communication to transform complex datasets into
+              actionable insights.
+            </p>
+            <p>
+              Currently seeking a business analytics graduate internship at a leading MNC, where I can apply my
+              expertise in SQL, Python, BigQuery, Looker, and cloud-native data pipelines to solve real-world business
+              challenges.
+            </p>
           </div>
-          <div class="stat-card">
-            <div class="stat-value">HSK 5</div>
-            <div class="stat-label">Chinese Level</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-value">15M+</div>
-            <div class="stat-label">Rows Analyzed</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-value">18%</div>
-            <div class="stat-label">Latency Reduced</div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ======== EDUCATION ======== -->
-    <section id="education">
-      <div class="section-header reveal">
-        <div class="section-accent-line"></div>
-        <p class="section-tag">Education</p>
-        <h2 class="section-title">Academic journey<br />& certifications.</h2>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">Sep 2024 — Present</div>
-          <h3 class="timeline-title">International Business Economics</h3>
-          <p class="timeline-institution">Foreign Trade University</p>
-          <p class="timeline-desc">
-            Modules include: Advanced Mathematics, Informatics, Theory of Probability and Mathematical Statistics, Econometrics, Data Management System, Time Series Models for Economics and Business, Programming For Data Analysis and Scientific Computing.
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">Aug 2025</div>
-          <h3 class="timeline-title">Google Cloud Data Analytics</h3>
-          <p class="timeline-institution">Coursera Certification</p>
-          <p class="timeline-desc">
-            Modules include: Introduction to Data Analytics in Google Cloud, Data Management and Storage in the Cloud, Data Transformation in the Cloud, The Power of Storytelling: How to Visualize Data in the Cloud, Put It All Together: Prepare for a Cloud Data Analyst Job.
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">Certified</div>
-          <h3 class="timeline-title">Microsoft Office Specialist</h3>
-          <p class="timeline-institution">Microsoft Office 2016</p>
-          <p class="timeline-desc">
-            Certified proficiency across Microsoft Office 2016 productivity suite, demonstrating advanced skills in Excel, Word, and PowerPoint for professional data management and reporting.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======== SKILLS ======== -->
-    <section id="skills">
-      <div class="section-header reveal">
-        <div class="section-accent-line"></div>
-        <p class="section-tag">Skills</p>
-        <h2 class="section-title">Tools & expertise<br />I bring to the table.</h2>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skills-category reveal">
-          <h3>Core Competencies</h3>
-          <div class="skills-tags stagger-children">
-            <span class="skill-tag"><span class="skill-dot"></span>Data Analysis</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Data Visualization</span>
-            <span class="skill-tag"><span class="skill-dot"></span>ETL Management</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Project Management</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Oral Communication</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Supply Chain Management</span>
-          </div>
-        </div>
-
-        <div class="skills-category reveal">
-          <h3>Technical Stack</h3>
-          <div class="skills-tags stagger-children">
-            <span class="skill-tag"><span class="skill-dot"></span>SQL</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Python</span>
-            <span class="skill-tag"><span class="skill-dot"></span>LookML</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Looker</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Looker IDE</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Dataproc</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Google Cloud Storage</span>
-            <span class="skill-tag"><span class="skill-dot"></span>BigQuery</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Power BI</span>
-            <span class="skill-tag"><span class="skill-dot"></span>Excel</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Languages sub-section -->
-      <div style="margin-top: 3rem;">
-        <div class="skills-category reveal">
-          <h3>Languages</h3>
-          <div class="languages-grid stagger-children">
-            <div class="lang-card">
-              <div class="lang-info">
-                <h3>English</h3>
-                <p>Professional Proficiency</p>
-              </div>
-              <div class="lang-badge">IELTS 7.5</div>
+          <div class="about-stats stagger-children reveal-right">
+            <div class="stat-card tilt-card">
+              <div class="stat-value" data-count="7.5">7.5</div>
+              <div class="stat-label">IELTS Score</div>
             </div>
-            <div class="lang-card">
-              <div class="lang-info">
-                <h3>Chinese</h3>
-                <p>Professional Proficiency</p>
-              </div>
-              <div class="lang-badge">HSK 5</div>
+            <div class="stat-card tilt-card">
+              <div class="stat-value">HSK 5</div>
+              <div class="stat-label">Chinese Level</div>
+            </div>
+            <div class="stat-card tilt-card">
+              <div class="stat-value" data-count="15" data-suffix="M+">15M+</div>
+              <div class="stat-label">Rows Analyzed</div>
+            </div>
+            <div class="stat-card tilt-card">
+              <div class="stat-value" data-count="18" data-suffix="%">18%</div>
+              <div class="stat-label">Latency Reduced</div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ======== WORK / PROJECT ======== -->
-    <section id="work">
-      <div class="section-header reveal">
-        <div class="section-accent-line"></div>
-        <p class="section-tag">Featured Project</p>
-        <h2 class="section-title">Cloud-native supply chain<br />optimization.</h2>
-      </div>
-
-      <div class="project-card reveal">
-        <div class="project-header">
-          <p class="project-tag">Data Engineering · Cloud Analytics · 2024–2026</p>
-          <h3 class="project-title">Maximizing Fulfillment Efficiency Using BigQuery and Looker</h3>
-          <p class="project-subtitle">
-            Architected an end-to-end cloud data pipeline to resolve rising delivery delays and inventory misallocations for a global e-commerce platform, utilizing TheLook E-commerce dataset encompassing over 15 million rows.
-          </p>
+      <!-- ======== EDUCATION ======== -->
+      <section id="education" class="section-enter">
+        <div class="section-header reveal">
+          <div class="section-accent-line reveal-line"></div>
+          <p class="section-tag reveal-blur">Education</p>
+          <h2 class="section-title word-reveal">Academic journey & certifications.</h2>
         </div>
 
-        <div class="project-body">
-          <!-- Business Understanding -->
-          <h4 class="project-section-title">Business Understanding</h4>
-          <p>
-            <strong style="color: var(--fg-secondary);">Stakeholders:</strong> VP of Global Supply Chain, Logistics Directors, and Warehouse Operations Managers.
-          </p>
-          <p style="margin-top: 0.75rem;">
-            <strong style="color: var(--fg-secondary);">Business Problem:</strong> Rapid scaling led to decentralized fulfillment nodes, causing a surge in "order-to-ship" delays and a mismatch between regional inventory and consumer demand. These bottlenecks directly increased customer churn and inflated warehousing holding costs.
-          </p>
-          <p style="margin-top: 0.75rem;">
-            <strong style="color: var(--fg-secondary);">Goal:</strong> Build a cloud-native analytical engine to uncover root causes of shipping delays across distribution centers and optimize regional inventory allocation.
-          </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">Sep 2024 — Present</div>
+            <h3 class="timeline-title">International Business Economics</h3>
+            <p class="timeline-institution">Foreign Trade University</p>
+            <p class="timeline-desc">
+              Modules include: Advanced Mathematics, Informatics, Theory of Probability and Mathematical Statistics,
+              Econometrics, Data Management System, Time Series Models for Economics and Business, Programming For Data
+              Analysis and Scientific Computing.
+            </p>
+          </div>
 
-          <!-- Data Understanding -->
-          <h4 class="project-section-title">Data Understanding</h4>
-          <p>
-            <strong style="color: var(--fg-secondary);">Dataset:</strong> GCP BigQuery Public Dataset (bigquery-public-data.thelook_ecommerce), featuring 15M+ multi-table relational records (orders, inventory_items, distribution_centers) from January 2022 to May 2026.
-          </p>
-          <ul style="margin-top: 0.75rem;">
-            <li>Optimized cloud infrastructure by partitioning tables by date and clustering by distribution center ID, reducing BigQuery processing costs by over 40%.</li>
-            <li>Secured data governance by masking simulated customer PII to maintain strict data compliance.</li>
-            <li>Limitations: Lacks explicit freight transit costs and real-time weather data; physical transit constraints were inferred through historical duration variances.</li>
-          </ul>
+          <div class="timeline-item">
+            <div class="timeline-date">Aug 2025</div>
+            <h3 class="timeline-title">Google Cloud Data Analytics</h3>
+            <p class="timeline-institution">Coursera Certification</p>
+            <p class="timeline-desc">
+              Modules include: Introduction to Data Analytics in Google Cloud, Data Management and Storage in the Cloud,
+              Data Transformation in the Cloud, The Power of Storytelling: How to Visualize Data in the Cloud, Put It
+              All Together: Prepare for a Cloud Data Analyst Job.
+            </p>
+          </div>
 
-          <!-- Conclusions -->
-          <h4 class="project-section-title">Key Outcomes</h4>
-          <ul>
-            <li>Isolated the root cause of delays — 32% of fulfillment bottlenecks originated from just two over-indexed distribution centers.</li>
-            <li>Developed an interactive Looker Studio dashboard visualizing real-time "Order Age" against target 48-hour SLAs.</li>
-            <li>Engineered optimized SQL views calculating inventory turnover rates to flag stockout risks 5 days faster than legacy methods.</li>
-          </ul>
-
-          <!-- Future -->
-          <h4 class="project-section-title">Future Steps</h4>
-          <p>
-            Integrate a BigQuery ML time-series model to forecast seasonal product demand at the regional level for proactive stock allocation. Implement strict data partitioning and clustering early to keep cloud costs predictable, and decouple storage and compute to maintain performance during high-volume scaling.
-          </p>
-
-          <!-- Tech Stack -->
-          <div class="project-tech">
-            <span class="project-tech-tag">BigQuery</span>
-            <span class="project-tech-tag">Looker Studio</span>
-            <span class="project-tech-tag">SQL</span>
-            <span class="project-tech-tag">LookML</span>
-            <span class="project-tech-tag">Google Cloud Platform</span>
-            <span class="project-tech-tag">Dataproc</span>
-            <span class="project-tech-tag">ETL Pipeline</span>
-            <span class="project-tech-tag">Data Governance</span>
+          <div class="timeline-item">
+            <div class="timeline-date">Certified</div>
+            <h3 class="timeline-title">Microsoft Office Specialist</h3>
+            <p class="timeline-institution">Microsoft Office 2016</p>
+            <p class="timeline-desc">
+              Certified proficiency across Microsoft Office 2016 productivity suite, demonstrating advanced skills in
+              Excel, Word, and PowerPoint for professional data management and reporting.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Academic Contribution teaser -->
-      <div class="reveal" style="margin-top: 3rem; text-align: center;">
-        <div style="padding: 2rem; border-radius: 1rem; border: 1px dashed var(--border-muted); background: var(--accent-subtle);">
-          <p class="section-tag" style="margin-bottom: 0.5rem;">Academic Contribution</p>
-          <p style="font-size: 0.875rem; color: var(--fg-muted);">Coming soon — stay tuned for published research and academic projects.</p>
+      <!-- ======== SKILLS ======== -->
+      <section id="skills" class="section-enter">
+        <div class="section-header reveal">
+          <div class="section-accent-line reveal-line"></div>
+          <p class="section-tag reveal-blur">Skills</p>
+          <h2 class="section-title word-reveal">Tools & expertise I bring to the table.</h2>
         </div>
-      </div>
-    </section>
 
-    <!-- ======== FOOTER / CONTACT ======== -->
-    <footer class="footer-section" id="contact">
-      <div class="footer-bg-text">
-        <span>Connect</span>
-      </div>
-
-      <div class="footer-content">
-        <div class="section-accent-line reveal" style="margin: 0 auto 1.5rem;"></div>
-        <p class="section-tag reveal">What's Next</p>
-        <h2 class="section-title reveal" style="text-align: center;">Let's build something<br />together.</h2>
-        <p class="reveal" style="margin-top: 1rem; max-width: 28rem; font-size: 0.875rem; line-height: 1.7; color: var(--fg-subtle); text-align: center;">
-          Have an opportunity, a project in mind, or just want to say hello? I'd love to hear from you.
-        </p>
-
-        <a href="mailto:huangjunming207@gmail.com" class="footer-cta-ring reveal">
-          <div class="footer-cta-inner">
-            <span class="footer-cta-dot"></span>
-            <span class="footer-cta-text">Get in touch</span>
+        <div class="skills-grid">
+          <div class="skills-category reveal">
+            <h3>Core Competencies</h3>
+            <div class="skills-tags stagger-children">
+              <span class="skill-tag"><span class="skill-dot"></span>Data Analysis</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Data Visualization</span>
+              <span class="skill-tag"><span class="skill-dot"></span>ETL Management</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Project Management</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Oral Communication</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Supply Chain Management</span>
+            </div>
           </div>
-        </a>
 
-        <div class="footer-social reveal">
-          <a href="mailto:huangjunming207@gmail.com" class="social-pill" target="_blank" rel="noopener noreferrer">Email</a>
-          <a href="https://www.linkedin.com/in/tuan-minh-hoang-34a827324/" class="social-pill" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="tel:+84838246121" class="social-pill">Phone</a>
+          <div class="skills-category reveal">
+            <h3>Technical Stack</h3>
+            <div class="skills-tags stagger-children">
+              <span class="skill-tag"><span class="skill-dot"></span>SQL</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Python</span>
+              <span class="skill-tag"><span class="skill-dot"></span>LookML</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Looker</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Looker IDE</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Dataproc</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Google Cloud Storage</span>
+              <span class="skill-tag"><span class="skill-dot"></span>BigQuery</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Power BI</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Excel</span>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 Tuan Minh Hoang</p>
-        <p>Built with intention</p>
-      </div>
-    </footer>
+        <!-- Languages sub-section -->
+        <div style="margin-top: 3rem;">
+          <div class="skills-category reveal">
+            <h3>Languages</h3>
+            <div class="languages-grid stagger-children">
+              <div class="lang-card">
+                <div class="lang-info">
+                  <h3>English</h3>
+                  <p>Professional Proficiency</p>
+                </div>
+                <div class="lang-badge">IELTS 7.5</div>
+              </div>
+              <div class="lang-card">
+                <div class="lang-info">
+                  <h3>Chinese</h3>
+                  <p>Professional Proficiency</p>
+                </div>
+                <div class="lang-badge">HSK 5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== WORK / PROJECT ======== -->
+      <section id="work" class="section-enter">
+        <div class="section-header reveal">
+          <div class="section-accent-line reveal-line"></div>
+          <p class="section-tag reveal-blur">Featured Project</p>
+          <h2 class="section-title word-reveal">Cloud-native supply chain optimization.</h2>
+        </div>
+
+        <div class="project-card reveal-scale tilt-card">
+          <div class="project-header">
+            <p class="project-tag">Data Engineering · Cloud Analytics · 2024–2026</p>
+            <h3 class="project-title">Maximizing Fulfillment Efficiency Using BigQuery and Looker</h3>
+            <p class="project-subtitle">
+              Architected an end-to-end cloud data pipeline to resolve rising delivery delays and inventory
+              misallocations for a global e-commerce platform, utilizing TheLook E-commerce dataset encompassing over 15
+              million rows.
+            </p>
+          </div>
+
+          <div class="project-body">
+            <!-- Business Understanding -->
+            <h4 class="project-section-title">Business Understanding</h4>
+            <p>
+              <strong style="color: var(--fg-secondary);">Stakeholders:</strong> VP of Global Supply Chain, Logistics
+              Directors, and Warehouse Operations Managers.
+            </p>
+            <p style="margin-top: 0.75rem;">
+              <strong style="color: var(--fg-secondary);">Business Problem:</strong> Rapid scaling led to decentralized
+              fulfillment nodes, causing a surge in "order-to-ship" delays and a mismatch between regional inventory and
+              consumer demand. These bottlenecks directly increased customer churn and inflated warehousing holding
+              costs.
+            </p>
+            <p style="margin-top: 0.75rem;">
+              <strong style="color: var(--fg-secondary);">Goal:</strong> Build a cloud-native analytical engine to
+              uncover root causes of shipping delays across distribution centers and optimize regional inventory
+              allocation.
+            </p>
+
+            <!-- Data Understanding -->
+            <h4 class="project-section-title">Data Understanding</h4>
+            <p>
+              <strong style="color: var(--fg-secondary);">Dataset:</strong> GCP BigQuery Public Dataset
+              (bigquery-public-data.thelook_ecommerce), featuring 15M+ multi-table relational records (orders,
+              inventory_items, distribution_centers) from January 2022 to May 2026.
+            </p>
+            <ul style="margin-top: 0.75rem;">
+              <li>Optimized cloud infrastructure by partitioning tables by date and clustering by distribution center
+                ID, reducing BigQuery processing costs by over 40%.</li>
+              <li>Secured data governance by masking simulated customer PII to maintain strict data compliance.</li>
+              <li>Limitations: Lacks explicit freight transit costs and real-time weather data; physical transit
+                constraints were inferred through historical duration variances.</li>
+            </ul>
+
+            <!-- Conclusions -->
+            <h4 class="project-section-title">Key Outcomes</h4>
+            <ul>
+              <li>Isolated the root cause of delays — 32% of fulfillment bottlenecks originated from just two
+                over-indexed distribution centers.</li>
+              <li>Developed an interactive Looker Studio dashboard visualizing real-time "Order Age" against target
+                48-hour SLAs.</li>
+              <li>Engineered optimized SQL views calculating inventory turnover rates to flag stockout risks 5 days
+                faster than legacy methods.</li>
+            </ul>
+
+            <!-- Future -->
+            <h4 class="project-section-title">Future Steps</h4>
+            <p>
+              Integrate a BigQuery ML time-series model to forecast seasonal product demand at the regional level for
+              proactive stock allocation. Implement strict data partitioning and clustering early to keep cloud costs
+              predictable, and decouple storage and compute to maintain performance during high-volume scaling.
+            </p>
+
+            <!-- Tech Stack -->
+            <div class="project-tech">
+              <span class="project-tech-tag">BigQuery</span>
+              <span class="project-tech-tag">Looker Studio</span>
+              <span class="project-tech-tag">SQL</span>
+              <span class="project-tech-tag">LookML</span>
+              <span class="project-tech-tag">Google Cloud Platform</span>
+              <span class="project-tech-tag">Dataproc</span>
+              <span class="project-tech-tag">ETL Pipeline</span>
+              <span class="project-tech-tag">Data Governance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Contribution teaser -->
+        <div class="reveal" style="margin-top: 3rem; text-align: center;">
+          <div
+            style="padding: 2rem; border-radius: 1rem; border: 1px dashed var(--border-muted); background: var(--accent-subtle);">
+            <p class="section-tag" style="margin-bottom: 0.5rem;">Academic Contribution</p>
+            <p style="font-size: 0.875rem; color: var(--fg-muted);">Coming soon — stay tuned for published research and
+              academic projects.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-section" id="contact">
+        <div class="footer-bg-text">
+          <span>Connect</span>
+        </div>
+
+        <div class="footer-content">
+          <div class="section-accent-line reveal-line" style="margin: 0 auto 1.5rem;"></div>
+          <p class="section-tag reveal-blur">What's Next</p>
+          <h2 class="section-title word-reveal" style="text-align: center;">Let's build something together.</h2>
+          <p class="reveal"
+            style="margin-top: 1rem; max-width: 28rem; font-size: 0.875rem; line-height: 1.7; color: var(--fg-subtle); text-align: center;">
+            Have an opportunity, a project in mind, or just want to say hello? I'd love to hear from you.
+          </p>
+
+          <!-- Contact info cards -->
+          <div class="contact-info-grid stagger-children">
+            <!-- Email -->
+            <div class="contact-card tilt-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M22 4L12 13 2 4" />
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">huangjunming207@gmail.com</span>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card tilt-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92V19.92C22 20.483 21.5 21 20.92 21C10.4 21 2 12.6 2 2.08C2 1.5 2.517 1 3.08 1H6.08C6.5 1 6.87 1.31 6.95 1.72L7.82 6.27C7.9 6.67 7.76 7.08 7.47 7.35L5.39 9.43C6.87 12.37 9.63 15.13 12.57 16.61L14.65 14.53C14.92 14.24 15.33 14.1 15.73 14.18L20.28 15.05C20.69 15.13 21 15.5 21 15.92L22 16.92Z" />
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+84 838 246 121</span>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card tilt-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Address</span>
+                <span class="contact-value">Nghia Do Ward, Cau Giay Dist., Hanoi</span>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-card tilt-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">tuan-minh-hoang</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Tuan Minh Hoang</p>
+          <p>Built with intention</p>
+        </div>
+      </footer>
+
+    </div><!-- /.content-bg -->
 
   </main>
 
@@ -485,7 +578,41 @@
       mobileMenuBtn.setAttribute('aria-expanded', 'false');
     }
 
-    // ===== SCROLL REVEAL =====
+    // ===== SCROLL PROGRESS BAR =====
+    const scrollProgress = document.getElementById('scrollProgress');
+    function updateScrollProgress() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? scrollTop / docHeight : 0;
+      scrollProgress.style.transform = `scaleX(${progress})`;
+    }
+
+    // ===== WORD REVEAL — split titles into animated words =====
+    document.querySelectorAll('.word-reveal').forEach((el) => {
+      const text = el.textContent.trim();
+      el.innerHTML = '';
+      text.split(' ').forEach((word, i) => {
+        const wordSpan = document.createElement('span');
+        wordSpan.classList.add('word');
+        const inner = document.createElement('span');
+        inner.classList.add('word-inner');
+        inner.textContent = word;
+        inner.style.transitionDelay = `${i * 80}ms`;
+        wordSpan.appendChild(inner);
+        el.appendChild(wordSpan);
+        // Add a space between words
+        el.appendChild(document.createTextNode(' '));
+      });
+    });
+
+    // ===== SCROLL REVEAL OBSERVER =====
+    const revealSelectors = [
+      '.reveal', '.reveal-left', '.reveal-right', '.reveal-scale',
+      '.reveal-blur', '.reveal-clip', '.reveal-line',
+      '.stagger-children', '.timeline-item', '.section-enter',
+      '.word-reveal', '.section-divider'
+    ].join(', ');
+
     const revealObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -494,11 +621,59 @@
           }
         });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
     );
 
-    document.querySelectorAll('.reveal, .stagger-children, .timeline-item').forEach((el) => {
+    document.querySelectorAll(revealSelectors).forEach((el) => {
       revealObserver.observe(el);
+    });
+
+    // ===== ANIMATED COUNTERS ON STAT CARDS =====
+    function animateCounter(el) {
+      const target = parseFloat(el.dataset.count);
+      const suffix = el.dataset.suffix || '';
+      if (isNaN(target)) return;
+      const card = el.closest('.stat-card');
+      const duration = 1500;
+      const startTime = performance.now();
+      const isFloat = target % 1 !== 0;
+
+      if (card) card.classList.add('counting');
+
+      function step(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease out cubic
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = eased * target;
+        el.textContent = (isFloat ? current.toFixed(1) : Math.round(current)) + suffix;
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = (isFloat ? target.toFixed(1) : target) + suffix;
+          if (card) {
+            card.classList.remove('counting');
+            card.classList.add('counted');
+          }
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    const counterObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    document.querySelectorAll('[data-count]').forEach((el) => {
+      counterObserver.observe(el);
     });
 
     // ===== ACTIVE NAV TRACKING =====
@@ -521,16 +696,88 @@
 
     sections.forEach((s) => navObserver.observe(s));
 
-    // ===== SMOOTH PARALLAX ON HERO PORTRAIT =====
+    // ===== MULTI-LAYER PARALLAX =====
     const heroPortrait = document.querySelector('.hero-portrait');
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      if (scrollY < window.innerHeight) {
-        const parallax = scrollY * 0.3;
-        heroPortrait.style.transform = `translateY(${parallax}px)`;
-      }
-    }, { passive: true });
+    const heroBg = document.querySelector('.hero-bg');
+    const heroContent = document.querySelector('.hero-content');
+    const heroLine = document.querySelector('.hero-line');
+    const heroParticles = document.getElementById('particles');
+    const footerBgText = document.querySelector('.footer-bg-text');
+
+    let ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        const vh = window.innerHeight;
+
+        // Update scroll progress bar
+        updateScrollProgress();
+
+        // Hero parallax layers — different speeds create depth
+        if (scrollY < vh * 1.2) {
+          const ratio = scrollY / vh;
+          // Portrait moves up slower
+          heroPortrait.style.transform = `translateY(${scrollY * 0.25}px) scale(${1 + ratio * 0.05})`;
+          heroPortrait.style.opacity = Math.max(0, 0.35 - ratio * 0.35);
+          // Background zooms in slightly
+          heroBg.style.transform = `scale(${1 + ratio * 0.08})`;
+          // Content fades as you scroll
+          heroContent.style.opacity = Math.max(0, 1 - ratio * 1.5);
+          heroContent.style.transform = `translateY(${scrollY * 0.15}px)`;
+          // Accent line fades
+          if (heroLine) heroLine.style.opacity = Math.max(0, 1 - ratio * 2);
+          // Particles drift
+          if (heroParticles) heroParticles.style.transform = `translateY(${scrollY * 0.1}px)`;
+        }
+
+        // Footer background text parallax
+        if (footerBgText) {
+          const footerSection = document.getElementById('contact');
+          const footerRect = footerSection.getBoundingClientRect();
+          if (footerRect.top < vh && footerRect.bottom > 0) {
+            const footerProgress = 1 - footerRect.top / vh;
+            footerBgText.style.transform = `translateY(${footerProgress * -30}px) scale(${1 + footerProgress * 0.05})`;
+          }
+        }
+
+        ticking = false;
+      });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // ===== TILT CARD MOUSE EFFECT =====
+    document.querySelectorAll('.tilt-card').forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -4;
+        const rotateY = ((x - centerX) / centerX) * 4;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+      });
+    });
+
+    // ===== SMOOTH ANCHOR SCROLLING =====
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
   </script>
 
 </body>
+
 </html>
